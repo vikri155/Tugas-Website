@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website penjualan motor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h2>PENJUALAN MOTOR</h2>
+    </div>
+    <nav id="menu" colspan="2">
+        <a href="#">Beranda</a>
+        <a href="#">Suku Cadang</a>
+        <a href="#">Cabang</a>
+        <a href="#">Lokasi</a>
+    </nav>
+<div class="content">
+        <div id="sidebar">
+            <a href="kami.html"><button type="button" >Tentang Kami</button></a>
+            <a href="about.html"><button type="button" >Info</button></a>
+            <button type="button" name="sidebarButton">FAQ</button>
+            <button type="button" id="whatsappButton">Hubungi Admin</button>
+        </div>
+        <form id="formulir" method="post">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            <h2>PROGRAM PENJUALAN MOTOR</h2>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="motor">Merek motor</label>
+                        </td>
+                        <td>
+                            <select name="motor" id="motor">
+                                <option disabled selected>- pilih motor -</option>
+                                <option value="honda">Honda</option>
+                                <option value="yamaha">Yamaha</option>
+                                <option value="suzuki">Suzuki</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="aksesoris">Aksesoris</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="velg" name="aksesoris" value="velg">
+                            <label for="velg">Velg Racing</label><br>
+                            <input type="checkbox" id="helm" name="aksesoris" value="helm">
+                            <label for="helm">Helm</label><br>
+                            <input type="checkbox" id="jaket" name="aksesoris" value="jaket">
+                            <label for="jaket">Jaket</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cara-pembayaran">Cara Pembayaran</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="tunai" name="pembayaran" value="tunai">
+                            <label for="tunai">Tunai</label><br>
+                            <input type="radio" id="kredit" name="pembayaran" value="kredit">
+                            <label for="kredit">Kredit</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="harga">Harga</label>
+                        </td>
+                        <td>
+                            <input type="text" id="harga" name="harga" value="" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="bunga-diskon">Bunga/Diskon</label>
+                        </td>
+                        <td>
+                            <input type="text" id="bunga-diskon" name="bunga-diskon" value="" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="total">Total</label>
+                        </td>
+                        <td>
+                            <input type="text" id="total" name="total" value="" disabled>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">Proses</button>
+                            <button type="reset">Reset</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+</div>
+    <div id="footer">
+        Tugas Cloud Computing
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
